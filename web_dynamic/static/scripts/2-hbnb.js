@@ -1,15 +1,15 @@
 $(document).ready(function () {
-  new_dict = {};
+  const newDict = {};
   $('input').click(function () {
     $(':input').each(function () {
-      if (this.checked == true) {
-        new_dict[$(this).data('name')] = $(this).data('id');
+      if (this.checked === true) {
+        newDict[$(this).data('name')] = $(this).data('id');
       } else {
-        delete new_dict[$(this).data('name')];
+        delete newDict[$(this).data('name')];
       }
     });
-    let arr = [];
-    for (const key in new_dict){
+    const arr = [];
+    for (const key in newDict) {
       arr.push(key);
     }
     $('.amenities h4').html(arr.join(', '));
@@ -27,4 +27,3 @@ $(document).ready(function () {
     );
   });
 });
-    

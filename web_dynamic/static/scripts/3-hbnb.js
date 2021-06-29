@@ -42,11 +42,11 @@ $(function () {
           '<div class="title_box"><h2>' + place.name + '</h2>' +
           '<div class="price_by_night">$' + place.price_by_night + '</div></div>' +
           '<div class="information"><div class="max_guest">' + place.max_guest +
-          (place.max_guest != 1 ? 'Guests </div>' : 'Guest </div>') +
+          (place.max_guest != 1 ? ' Guests</div>' : ' Guest</div>') +
           '<div class="number_rooms">' + place.number_rooms +
-          (place.number_rooms != 1 ? 'Bedrooms </div>' : 'Bedroom </div') +
+          (place.number_rooms != 1 ? ' Bedrooms</div>' : ' Bedroom</div>') +
           '<div class="number_bathrooms">' + place.number_bathrooms +
-          (place.number_bathrooms != 1 ? 'Bathrooms </div>' : 'Bathroom </div>') +
+          (place.number_bathrooms != 1 ? ' Bathrooms</div>' : ' Bathroom</div>') +
           '</div><div class="description">' + place.description + '</div></article>');
       }
     }

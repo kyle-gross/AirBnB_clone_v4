@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 $(function () {
   $.getJSON(
-    'http://2a7794c2eec7.7e5652f1.hbtn-cod.io:5001/api/v1/status/',
+    'http://0.0.0.0:5001/api/v1/status/',
     function (data) {
       if (data.status === 'OK') {
         $('DIV#api_status').addClass('available');
@@ -30,7 +30,7 @@ $(function () {
 
 $(function () {
   $.ajax({
-    url: 'http://2a7794c2eec7.7e5652f1.hbtn-cod.io:5001/api/v1/places_search/',
+    url: 'http://0.0.0.0:5001/api/v1/places_search/',
     method: 'POST',
     contentType: 'application/json',
     data: JSON.stringify({}),
